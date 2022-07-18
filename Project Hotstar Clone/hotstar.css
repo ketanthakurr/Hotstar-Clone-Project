@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: #0c111b;
+    position: relative;
+    font-family: sans-serif,roboto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background-color: #0c111b;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo{
+    height: 70px;
+}
+
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: white;
+    opacity: 0.9;
+}
+
+.nav-items-kid a {
+    font-family: cursive;
+    margin-left: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-decoration: solid;
+    color: yellow;
+    opacity: 0.9;
+}
+
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+
+}
+
+.sub-button {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 6px 14px 6px 14px;
+    text-decoration: none;
+    margin-left: 20px;
+    outline: none;
+    font-weight: 500;
+}
+  
+.sub-button:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+
+.login{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: white;
+    opacity: 0.9;
+}
+
+.caraousel-container{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 20px 0;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+
+.carousel{
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slider{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slider-img{
+    width: 70%;
+   height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.slide-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, #030b17 65% , #0c111b00);
+    color: white;
+    top: 0  ;
+}
+
+.movie-title{
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top: 80px;
+}
+
+.movie-des{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+.video-container{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    
+}
+
+.video-card{
+    position: relative;
+    min-width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #030b17;
+}
+
+.video-card-img,.card-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-card:hover .video-card-img{
+    display: none;
+
+}
+
+.title{
+    color: white;
+    opacity: 0.9;
+    padding-left: 4%;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title2{
+    margin-top: 75px;
+    color: white;
+    opacity: 0.9;
+    padding-left: 4%;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.movies-list{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 10px 0 20px;
+}
+
+.card-container{
+    width: 100%;
+    padding-left: 80px;
+    height: 400px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    position: relative;
+    min-width: 230px;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.1);
+
+}
+
+.card:hover .card-body{
+    opacity: 1;
+
+}
+
+.card-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4,8,15,0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.name{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform:capitalize;
+    margin-top: 80%;
+}
+
+.des{
+    color: white;
+    opacity: 0.8;
+    margin: 7px, 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.watchlist-btn
+{
+    position: relative;
+    width: 95%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.watchlist-btn::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 35px;
+    width: 35px;
+    background-image: url(add.png);
+    background-size: cover;
+    transform: scale(0.4);
+}
+
+.watchlist-btn:hover
+{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.prv-btn, .nxt-btn{
+    position: absolute;
+    margin-top: 50px;
+    top: 0%;
+    width: 5%;
+    height: 100%;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.prv-btn{
+    left: 0%;
+    background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxt-btn{
+    right: 0%;
+    background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.prv-btn img,
+.nxt-btn{
+    width: 20px;
+    height: 30px;
+    opacity: 0;
+}
+
+.prv-btn:hover img,
+.nxt-btn:hover img{
+    opacity: 1;
+}
